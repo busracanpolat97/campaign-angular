@@ -1,0 +1,33 @@
+.create-campaign-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.create-campaign-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.create-campaign-container input[type="text"],
+.create-campaign-container textarea {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.create-campaign-container button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.create-campaign-container button:hover {
+  background-color: #0056b3;
+}

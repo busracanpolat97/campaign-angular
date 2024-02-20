@@ -1,0 +1,16 @@
+<div class="no-campaign-container" *ngIf="campaigns.length === 0">
+  <p>Henüz kampanya bulunmamaktadır.</p>
+  <a routerLink="/create-campaign" class="create-campaign-link">Yeni kampanya oluşturmak için tıklayınız.</a>
+</div>
+
+<div class="campaign-container" *ngFor="let campaign of campaigns">
+  <h3>{{ campaign.title }}</h3>
+  <p>{{ campaign.description }}</p>
+  <p>Puan: {{ campaign.points }}</p>
+  <p>Tarih: {{ campaign.date }}</p>
+  <button (click)="increasePoints(campaign)">Puan Arttır</button>
+  <button (click)="decreasePoints(campaign)">Puan Azalt</button>
+  <button (click)="deleteCampaign(campaign)">Kampanyayı Sil</button>
+</div>
+
+

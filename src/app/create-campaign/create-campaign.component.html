@@ -1,0 +1,9 @@
+<div class="create-campaign-container">
+  <label for="campaignTitle">Kampanya Başlığı:</label>
+  <input type="text" id="campaignTitle" [(ngModel)]="campaignTitle">
+
+  <label for="campaignDescription">Kampanya Açıklaması:</label>
+  <textarea id="campaignDescription" [(ngModel)]="campaignDescription"></textarea>
+
+  <button (click)="createCampaign()">Kampanya Oluştur</button>
+</div>
